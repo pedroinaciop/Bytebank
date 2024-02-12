@@ -1,6 +1,4 @@
-# E-commerce ZN Dental
-
-# Sobre o projeto
+# Banco Digital - ByteBank
 
 https://pedroinaciop.github.io/Bytebank/
 
