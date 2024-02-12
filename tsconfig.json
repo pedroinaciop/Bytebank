@@ -1,0 +1,13 @@
+{ 
+    "compilerOptions": {
+        "target": "ES2022",     //versão do ECMA SCRIPT que será compilado
+        "outDir": "./dist/js/", //pasta que irão os .js compilados
+        "noEmitOnError": false   //será compilado somente quando não apresentar erro
+
+    },
+    "include": [
+        "./src/**/*" //onde ele procurara arquivos .ts para realizar a compilação
+    ]
+}
+
+//tsc -w (para começar a monitorar a pasta src)

@@ -1,0 +1,64 @@
+
+//Arrays | método concat() - utilizado para concatenar dois arrays.
+
+const nomes = ["Pedro", "Filipi", "Pingo"];
+const idade = ["19", "15", "10"];
+const array = nomes.concat(idade);
+console.log(array)
+
+//Arrays | método join() - utilizado para juntar diversas strings de um array, em somente uma string em outro array.
+
+const usuario = ["P","e","d","r","o"];
+const usuarioSeparado = usuario.join('');
+console.log(usuarioSeparado);
+
+//Arrays | método push() - utilizado para adicionar um elemento na última posição de um array.
+
+const animais = ["Águia", "Gavião", "Gato"];
+console.log(animais.push("Cachorro"));
+
+//Arrays | método pop() - utilizado para remover o último elemento de um array.
+
+const numeros = [1, 2, 3, 4];
+console.log(numeros.pop());
+
+//Arrays | método shift() - utilizado para remover o primeiro elemento de um array.
+
+const alfabeto = ["A", "B", "C", "D"];
+console.log(alfabeto.shift());
+
+//Arrays | método unshift() - utilizado para adicionar um ou mais elementos ao início de um array.
+
+const marcas = ["Apple", "Microsoft", "Xiaomi"];
+console.log(marcas.unshift("Sony", "Dell"));
+
+//Arrays | método slice() - utilizado para retornar uma cópia de parte de um array, especificada pelos índices de início e fim.
+
+const linguagens = ["JavaScript", "TypeScript", "Java", "PHP", "C", "C++", "C#", "Python"];
+console.log(linguagens.slice(4,7));
+
+//Arrays | método reverse() - utilizado para inverter a ordem dos elementos em um array.
+
+const instrumentos = ["Violão", "Piano", "Flauta", "Violino"];
+console.log(instrumentos.reverse());
+
+//Arrays | método includes() - utilizado para descobrir se o dados inserido está no array em questão.
+
+const objetos = ["Faca", "Garfo", "Copo", "Colher"];
+console.log(objetos.includes("Faca"));
+
+//Arrays | método sort() - ordena os elementos de um array.
+const notas = [5, 9, 8, 7, 2, 3, 8, 1]
+console.log(notas.sort())
+
+//Arrays | método splice() - permite adicionar, atualizar e remover elementos em um array (posição, posição_remover, adicionar).
+const meses = ['Jan', 'Março', 'Abril', 'Junho'];
+meses.splice(1, 0, 'Fev');
+console.log(meses);
+
+//Arrays | método indexOf() - retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente.
+
+const jogos = ["Spider-Man", "God of War", "The last of us", "Pac-Man", "Sonic"];
+console.log(jogos.indexOf("Pac-Man"));
+console.log(jogos[3]);
+console.log(jogos.length)

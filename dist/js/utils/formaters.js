@@ -1,0 +1,29 @@
+import { FormatoData } from "../types/FormatoData.js";
+export function formatarMoeda(valor) {
+    return valor.toLocaleString("pt-br", {
+        currency: "BRL",
+        style: "currency"
+    });
+}
+export function formatarData(data, formato = FormatoData.PADRAO) {
+    if (formato === FormatoData.DIA_SEMANA_MES_ANO) {
+        return data.toLocaleDateString("pt-br", {
+            weekday: "long",
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric"
+        });
+    }
+    else if (formato === FormatoData.DIA_MES) {
+        return data.toLocaleDateString("pt-br", {
+            day: "2-digit",
+            month: "2-digit",
+        });
+    }
+    return data.toLocaleDateString("pt-br");
+}
+export function formatarInformacoes(valor, data, formato) {
+    const dataFormatada = formatarData(data, FormatoData.PADRAO);
+    const valorFormatado = formatarMoeda(valor);
+    return `${valorFormatado} - ${dataFormatada}`;
+}
