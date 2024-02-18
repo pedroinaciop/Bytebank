@@ -2,7 +2,7 @@
 
 https://pedroinaciop.github.io/Bytebank/
 
-O BytreBank é um projeto feito com foco em aprimorar e conhecer tecnologias novas do TypeScript e localStorage.
+O ByteBank é um projeto feito com foco em aprimorar e conhecer tecnologias novas do TypeScript e localStorage.
 
 ## Layout web
 ![Web 1](https://pedroinaciop.github.io/Bytebank/dist/images/web-1.png)
